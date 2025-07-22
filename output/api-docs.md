@@ -1,34 +1,30 @@
-# API Documentation
+# API Documentation (Python Flask)
 
-## GET /users
+## GET /user
+
+**Function**: get_users
 
 **Description**: _Add description here._
 
-**Parameters**: 
-
-- `param1`: type
-
-**Response**: 
+**Sample Response**:
 
 ```json
 {
-  "status": "success"
+  "status": "ok"
 }
 ```
 
 ## POST /login
 
+**Function**: login
+
 **Description**: _Add description here._
 
-**Parameters**: 
-
-- `param1`: type
-
-**Response**: 
+**Sample Response**:
 
 ```json
 {
-  "status": "success"
+  "status": "ok"
 }
 ```
 
