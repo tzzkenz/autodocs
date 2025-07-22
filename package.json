@@ -1,8 +1,11 @@
 {
-  "name": "autodocs",
+  "name": "autodocs-cli-tool",
   "version": "1.0.0",
-  "description": "Nothing yet, just a test",
-  "main": "index.js",
+  "description": "A simple CLI to auto-generate API documentation from JS or Python code",
+  "main": "bin/index.js",
+  "bin": {
+    "autodocs": "bin/index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,9 +13,16 @@
     "type": "git",
     "url": "git+https://github.com/tzzkenz/autodocs.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "cli",
+    "documentation",
+    "express",
+    "flask",
+    "js",
+    "python"
+  ],
+  "author": "Kenz E S",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/tzzkenz/autodocs/issues"
   },

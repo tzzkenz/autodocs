@@ -43,3 +43,6 @@ Thumbs.db
 # Others (temporary)
 tmp/
 temp/
+
+# Ignore files of output directories
+output/*
