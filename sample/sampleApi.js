@@ -1,10 +1,16 @@
-const express = require("express");
-const app = express();
-
+// This route gets all users
 app.get("/users", (req, res) => {
-  res.send("Users");
+  res.send("All users");
 });
 
-app.post("/login", (req, res) => {
-  res.send("Login");
+/*
+  Creates a new user in the DB
+  Requires name and email
+*/
+app.post("/users", (req, res) => {
+  res.send("User created");
+});
+
+app.delete("/users/:id", (req, res) => {
+  res.send("User deleted");
 });

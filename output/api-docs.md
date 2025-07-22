@@ -1,30 +1,49 @@
-# API Documentation (Python Flask)
+# API Documentation
 
-## GET /user
+## GET /users
 
-**Function**: get_users
+**Description:** This route gets all users
 
-**Description**: _Add description here._
+**Parameters**:
 
-**Sample Response**:
+- `param1`: type
 
-```json
-{
-  "status": "ok"
-}
-```
-
-## POST /login
-
-**Function**: login
-
-**Description**: _Add description here._
-
-**Sample Response**:
+**Response**:
 
 ```json
 {
-  "status": "ok"
+  "status": "success"
 }
 ```
 
+## POST /users
+
+**Description:** Creates a new user in the DB Requires name and email
+
+**Parameters**:
+
+- `param1`: type
+
+**Response**:
+
+```json
+{
+  "status": "success"
+}
+```
+
+## DELETE /users/:id
+
+**Description:** No description provided.
+
+**Parameters**:
+
+- `param1`: type
+
+**Response**:
+
+```json
+{
+  "status": "success"
+}
+```
