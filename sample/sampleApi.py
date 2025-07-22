@@ -1,11 +1,8 @@
-from flask import Flask, jsonify
-
-app = Flask(__name__)
-
-@app.route('/user', methods=['GET'])
+# Returns list of users
+@app.route("/users", methods=['GET'])
 def get_users():
-    return jsonify({"users": []})
+    ...
 
-@app.route('/login', methods=['POST'])
-def login():
-    return 'ok'
+@app.route("/users", methods=['POST'])
+def create_user():
+    ...
