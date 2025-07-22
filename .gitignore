@@ -47,4 +47,4 @@ temp/
 # Ignore files of output directories
 output/*
 
-sample/*
+sample/
