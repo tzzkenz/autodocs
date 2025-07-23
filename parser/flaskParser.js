@@ -30,7 +30,7 @@ function extractComment(lines, index) {
   return "No description provided.";
 }
 
-function generatePyDocs(filePath) {
+function generatePyDocs(filePath, outputDir = "output") {
   const content = fs.readFileSync(filePath, "utf-8");
   const lines = content.split("\n");
 
@@ -56,12 +56,12 @@ function generatePyDocs(filePath) {
     }
   }
 
-  const outputDir = path.join(process.cwd(), "output");
-  fs.mkdirSync(outputDir, { recursive: true });
+  const outputDirectory = path.join(process.cwd(), outputDir);
+  fs.mkdirSync(outputDirectory, { recursive: true });
 
   const outputName =
     path.basename(filePath, path.extname(filePath)) + "-docs.md";
-  const outputPath = path.join(outputDir, outputName);
+  const outputPath = path.join(outputDirectory, outputName);
   fs.writeFileSync(outputPath, result);
   console.log(`Flask docs generated at ${outputPath}`);
 }

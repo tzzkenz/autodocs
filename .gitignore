@@ -45,6 +45,8 @@ tmp/
 temp/
 
 # Ignore files of output directories
-output/*
+output/
+docs/
 
 sample/
+autodocs.config.json
