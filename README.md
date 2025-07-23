@@ -27,8 +27,8 @@ npm install -g autodoc-cli-tool
 ### 1. Using Command-Line Options
 
 ```bash
-autodoc-cli-tool -f ./server.js --lang js
-autodoc-cli-tool -f ./api.py --lang py
+autodocs -f ./server.js --lang js
+autodocs -f ./api.py --lang py
 ```
 
 ### 2. Using a Config File (`autodocs.config.json`)
