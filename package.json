@@ -1,6 +1,6 @@
 {
   "name": "autodocs-cli-tool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A simple CLI to auto-generate API documentation from JS or Python code",
   "main": "bin/index.js",
   "bin": {
@@ -30,6 +30,7 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^14.0.0",
+    "cors": "^2.8.5",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
     "markdown-it": "^14.1.0",
