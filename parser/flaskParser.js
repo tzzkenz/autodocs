@@ -56,10 +56,13 @@ function generatePyDocs(filePath) {
     }
   }
 
-  const outputPath = path.join(__dirname, "../output/api-docs.md");
+   const outputDir = path.join(__dirname, "../output");
+  fs.mkdirSync(outputDir, { recursive: true });
 
+  const outputPath = path.join(outputDir, "api-docs.md");
   fs.writeFileSync(outputPath, result);
   console.log(`Flask docs generated at ${outputPath}`);
+
 }
 
 module.exports = { generatePyDocs };
